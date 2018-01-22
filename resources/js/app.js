@@ -118,11 +118,12 @@ $(document).ready(
            var finalCode = drawingCode.concat(endCode);
             
             download(
+
                 'Pancake_Spiral.GCODE', 
                 finalCode); 
         } 
         
-        function download(filename, text) 
+        function download(filename, gcode) 
         { 
             var element = 
                 document.createElement('a'); 
@@ -131,7 +132,7 @@ $(document).ready(
                 'href', 
                 'data:text/plain;charset=utf-8,{0}'.format(
                     encodeURIComponent(
-                        text))); 
+                        gcode))); 
             
             element.setAttribute(
                 'download', 
