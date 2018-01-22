@@ -123,7 +123,7 @@ $(document).ready(
                 finalCode); 
         } 
         
-        function download(filename, gcode) 
+        function download(filename, text) 
         { 
             var element = 
                 document.createElement('a'); 
@@ -132,7 +132,7 @@ $(document).ready(
                 'href', 
                 'data:text/plain;charset=utf-8,{0}'.format(
                     encodeURIComponent(
-                        gcode))); 
+                        text))); 
             
             element.setAttribute(
                 'download', 
