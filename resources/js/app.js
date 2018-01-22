@@ -118,7 +118,7 @@ $(document).ready(
            var finalCode = drawingCode.concat(endCode);
             
             download(
-                'Your_New_Spiral.txt', 
+                'Pancake_Spiral.GCODE', 
                 finalCode); 
         } 
         
