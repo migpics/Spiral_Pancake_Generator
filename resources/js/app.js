@@ -55,6 +55,7 @@ $(document).ready(
         
         function draw(startX, startY, myAngle, lineDistance, angleChange, myIterations, myCompletionAngle) 
         {
+            myGCode = new Array();
             context.clearRect(0, 0, a_canvas.width, a_canvas.height);
             context.beginPath();
             context.moveTo(startX, startY);
